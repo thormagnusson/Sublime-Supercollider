@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>case
-	{$1}	{$2}
-	{$3}	{$4};
+	<string>case 
+	{ ${1} } { ${2} }
+	{ ${3} } { ${4} }
+	{ ${5} } { ${6} }
+	{ ${7} } { ${8} };
 </string>
 	<key>name</key>
 	<string>case</string>
@@ -14,6 +16,6 @@
 	<key>tabTrigger</key>
 	<string>case</string>
 	<key>uuid</key>
-	<string>44331733-E717-4546-BA68-C254284E1089</string>
+	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
 </dict>
 </plist>

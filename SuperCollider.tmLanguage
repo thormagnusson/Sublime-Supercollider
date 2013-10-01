@@ -22,7 +22,7 @@
 
     <dict> #keywords
       <key>match</key>
-      <string>\b(this|thisThread|thisMethod|thisFunction|thisProcess|true|false|inf|nil|if|switch)\b</string>
+      <string>\b(this|thisThread|thisMethod|thisFunction|thisProcess|true|false|inf|nil|if|switch|case)\b</string>
       <key>name</key>
       <string>keyword.control.supercollider</string>
     </dict>

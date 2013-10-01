@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>Task {
-	${1:inf}.do {|${3:i}|
-		$4
-		${5:1}.wait;
-	};
-};</string>
+	<string>t = Task{
+	inf.do({ |${1: x }|
+		"${2: x} is: %\n".postf(${3:x});
+		${4:0.5}.wait;
+	});
+};
+t.play;
+</string>
 	<key>name</key>
-	<string>Task</string>
+	<string>task</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
 	<string>task</string>
 	<key>uuid</key>
-	<string>C3A8186C-A802-4467-9B4B-08B17DB75DAC</string>
+	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
 </dict>
 </plist>

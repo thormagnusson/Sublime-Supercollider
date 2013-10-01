@@ -3,15 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>.class.findRespondingMethodFor(\\${1:ar}).argNames;
+	<string>if(${1:condition}, { ${2:true} }, { ${3:false} });
 </string>
 	<key>name</key>
-	<string>UGen Args</string>
+	<string>if</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>.uargs</string>
+	<string>if</string>
 	<key>uuid</key>
-	<string>196801F7-D3E6-4778-9F10-9CD590245C74</string>
+	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
 </dict>
 </plist>
+
+

@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>if(${1:condition}) {
-	${2:true}
-} {
-	${3:false}
-};</string>
+	<string>SynthDef(\demo, {arg freq=${1:440}, amp=${2:0.2}, pan=${3:0}, out=${4:0}, mod=${5:4};
+	var signal;
+	signal = Pan2.ar(Saw.ar(freq*SinOsc.ar(mod), 0.2));
+	Out.ar(out, signal);
+}).add;
+Synth(\demo, [\freq, ${6:666}]);
+</string>
 	<key>name</key>
-	<string>ife ...</string>
+	<string>SynthDef</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>ife</string>
+	<string>SynthDef</string>
 	<key>uuid</key>
 	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
 </dict>

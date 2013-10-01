@@ -3,17 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>SynthDef(\\${1:foobar}) { |${2:out=0}$3|
-	$0
-}.add;
+	<string>switch(${1: state }) 
+	{ ${2} } { ${3} }
+	{ ${4} } { ${5} }
+	{ ${6} } { ${7} }
+	{ ${8} } { ${9} };
 </string>
 	<key>name</key>
-	<string>Create SynthDef</string>
+	<string>switch</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>sdef</string>
+	<string>switch</string>
 	<key>uuid</key>
-	<string>99EFA3F0-FDE6-4209-BED6-E051109CC51A</string>
+	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
 </dict>
 </plist>

@@ -1,47 +1,23 @@
+
 # Supercollider package for Sublime Text 2
 
-Forked from geoffroymontel / supercollider-package-for-sublime-text  
-https://github.com/geoffroymontel/supercollider-package-for-sublime-text
+This Sublime Text package is based on Geoffroy Montel's package (https://github.com/geoffroymontel/supercollider-package-for-sublime-text) and using lots of the goodies Arthur Carabot put into his fork (https://github.com/acarabott/supercollider-tmbundle). 
 
-Tested on OSX Lion and SC3.5 Mainly  
-Tested on XP and SC3.5 (only a little...)
+However, neither of those served my work practices (and key shortcuts) and I believe I have improved the syntax highlighting. 
 
-## Usage
+## Installation
 - Open Sublime Text 2  
 - Go to Preferences/Browse Packages  
-- Create a SuperCollider directory.  
-- Copy and paste all the files from this repository in it.  
-- Change Supercollider path in SuperCollider.sublime-settings
+- Create a SuperCollider directory
+- Drag the files from this repository into it  
+- Change the path to your SuperCollider in SuperCollider.sublime-settings
 - Restart Sublime Text 2
-- Tools > Supercollider > Start sclang
-
-## Keybind(Mac)
-- Start SCLang: Cmd + Ctrl + s, Cmd + Ctrl + s
-- Stop SCLang: Cmd + Ctrl + s, Cmd + Ctrl + p
-- Evaluate current line: Ctrl + enter
-- Stop all sound(thisProcess.stop;): Ctrl + .
-- Open help from current word: Cmd + Ctrl + s, Cmd + Ctrl + h
-- Show console: Cmd + Ctrl + s, Cmd + Ctrl + c
-- Clear console logs: Cmd + Ctrl + s, Cmd + Ctrl + l
-
-## Keybind(Windows/Linux)
-- Start SCLang: Ctrl + Alt + s, Ctrl + Alt + s
-- Stop SCLang: Ctrl + Alt + s, Ctrl + Alt + s
-- Evaluate current line: Ctrl + enter
-- Stop all sound(thisProcess.stop;): Ctrl + .
-- Open help from current word: Ctrl + Alt + s, Ctrl + Alt + h
-- Show console: Ctrl + Alt + s, Ctrl + Alt + c
-- Clear console logs: Ctrl + Alt + s, Ctrl + Alt + l
+- Tools > SuperCollider > Start SC-lang
 
 
-geoffroymontel / supercollider-package-for-sublime-text  
-https://github.com/geoffroymontel/supercollider-package-for-sublime-text
+Thor Magnusson, 2013
 
-The syntax highlighting comes from RFWatson's SuperCollider TM Bundle  
-https://github.com/rfwatson/supercollider-tmbundle
+http://www.twitter.com/thormagnusson
 
-Sublime Text 2  
-http://www.sublimetext.com/2
+http://www.ixi-audio.net
 
-Supercollider  
-http://supercollider.sourceforge.net 
