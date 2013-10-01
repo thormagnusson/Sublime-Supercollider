@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.addLoop('${1:category}', '${2:loop_name}',
+	${3:bus},
+	groups['input'],
+	\addToTail,
+	'${4:name}',
+	${5:1}
+);</string>
+	<key>name</key>
+	<string>BBP addLoop</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>.adl</string>
+	<key>uuid</key>
+	<string>12403543-E58E-40C5-8441-6EA12B647CC3</string>
+</dict>
+</plist>

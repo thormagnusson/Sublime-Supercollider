@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.addRoutine('${1:hits}', Routine {
+	inf.do {|i|
+		$2
+		1.wait;
+	};
+});
+</string>
+	<key>name</key>
+	<string>BBP addRoutine</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>.adr</string>
+	<key>uuid</key>
+	<string>74F57CCE-53FE-499B-90EE-14409214EF04</string>
+</dict>
+</plist>

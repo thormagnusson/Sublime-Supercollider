@@ -1,0 +1,14 @@
+{
+    // SuperCollider directory (use double \\ in Windows)
+    "sc_dir": "/Applications/SuperCollider3.5.3/SuperCollider.app/Contents/Resources/",
+
+    // SCLang command name
+    "sc_exe": "sclang",
+
+    // URL of SCCode search engine
+    // two alternatives :
+    // http://doc.sccode.org/Search.html#
+    // or
+    // http://sccode.org/search?q=
+    "sccode_search_url": "http://doc.sccode.org/Search.html#"
+}

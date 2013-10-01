@@ -1,0 +1,36 @@
+[
+  {
+    "keys": ["shift+enter"], "command": "sc_send"
+  },
+  {
+    "keys": ["command+."], "command": "sc_stop_all_sounds"
+  },
+  {
+    "keys": ["command+\\"], "command": "sc_show_console"
+  },
+  {
+    "keys": ["command+'"], "command": "sc_hide_console"
+  },
+  {
+    "keys": ["command+shift+c"], "command": "sc_clear_console"
+  },
+  {
+    "keys": ["command+d"], "command": "sc_search_help"
+  },
+  {
+    "keys": ["command+y"], "command": "sc_open_class"
+  },
+  {
+    "keys": ["command+Shift+b"], "command": "sc_boot_server"
+  },
+  {
+    "keys": ["command+k"], "command": "sc_recompile"
+  },
+  {
+    "keys": ["super+ctrl+w"], "command": "sc_start"
+  },
+  {
+    "keys": ["super+ctrl+q"], "command": "sc_stop"
+  }
+
+]

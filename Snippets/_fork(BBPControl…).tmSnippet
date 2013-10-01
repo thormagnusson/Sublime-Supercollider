@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>.fork(BBPControl.clock${1:, quant:Quant(${2:1})});</string>
+	<key>name</key>
+	<string>.fork(BBPControl…)</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>.bfork</string>
+	<key>uuid</key>
+	<string>38061D1F-8490-4C1F-A787-DAFF0065AAB2</string>
+</dict>
+</plist>

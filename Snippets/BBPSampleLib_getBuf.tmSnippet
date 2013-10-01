@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>BBPSampleLib.${1:getBuf}('${2:tabletennis}', '${3:loop_break_all}')</string>
+	<key>name</key>
+	<string>BBPSampleLib.getBuf</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>gb</string>
+	<key>uuid</key>
+	<string>84CF7304-FEEF-4EC1-9A68-EA98F8541C68</string>
+</dict>
+</plist>
