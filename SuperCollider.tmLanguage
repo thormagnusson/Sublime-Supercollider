@@ -22,18 +22,32 @@
 
     <dict> #keywords
       <key>match</key>
-      <string>\b(arg|var|classvar|this|thisThread|thisMethod|thisFunction|thisProcess|true|false|inf|nil|if|switch)\b</string>
+      <string>\b(this|thisThread|thisMethod|thisFunction|thisProcess|true|false|inf|nil|if|switch)\b</string>
       <key>name</key>
       <string>keyword.control.supercollider</string>
     </dict>
-    
-    <dict>
+
+    <dict> #keywords
+      <key>match</key>
+      <string>\b(var|classvar)\b</string>
+      <key>name</key>
+      <string>keyword.var.supercollider</string>
+    </dict>
+   
+    <dict> #argkeyword
+      <key>match</key>
+      <string>\b(arg)\b</string>
+      <key>name</key>
+      <string>keyword.arg.supercollider</string>
+    </dict>
+
+    <dict> #string
       <key>begin</key>
       <string>"</string>
       <key>end</key>
       <string>"</string>
       <key>name</key>
-      <string>string.quoted.double.supercollider</string>
+      <string>string.double.supercollider</string>
       <key>patterns</key>
       <array>
         <dict>
@@ -44,7 +58,8 @@
         </dict>
       </array>
     </dict>
-    <dict>
+
+    <dict> #symbol
       <key>begin</key>
       <string>'</string>
       <key>end</key>
@@ -61,38 +76,30 @@
         </dict>
       </array>
     </dict>
-    <dict>
+
+
+    <dict> # pipearguments
+      <key>match</key>
+      <string>\|[a-zA-Z0-9\#\[\]\"\_\=\.\(\)[[:space:]]\,]+|</string>
+      <key>name</key>
+      <string>arg.function.supercollider</string>
+    </dict>
+
+    <dict> 
       <key>match</key>
       <string>[a-z][a-zA-Z0-9_]*\:</string>
       <key>name</key>
       <string>entity.name.tag.supercollider</string>
     </dict>
     
-    <dict>
-      <key>match</key>
-      <string>\|[a-zA-Z0-9\#\[\]\"\_\=\.\(\)[[:space:]]\,]+\|</string>
-      <key>name</key>
-      <string>variable.parameter.function.supercollider</string>
-    </dict>
-    <dict>
-      <key>captures</key>
-      <dict>
-        <key>1</key>
-        <dict>
-          <key>name</key>
-          <string>entity.name.class.supercollider</string>
-        </dict>
-      </dict>
-      <key>match</key>
-      <string>[^a-zA-Z0-9\\]([A-Z_]{1}[a-zA-Z0-9_]*)[^a-zA-Z0-9_]</string>
-    </dict>
-    <dict>
+    <dict> #symbol
       <key>match</key>
       <string>\\[a-zA-Z0-9\_]+</string>
       <key>name</key>
       <string>entity.name.symbol.supercollider</string>
     </dict>
-    <dict>
+
+    <dict> #functionname
       <key>captures</key>
       <dict>
         <key>1</key>
@@ -104,19 +111,22 @@
       <key>match</key>
       <string>^\s*(\**[a-z]{1}[a-zA-Z0-9_]+)\s*\{</string>
     </dict>
-    <dict>
+
+    <dict> #tildavariable
       <key>match</key>
       <string>\~[a-zA-Z0-9]+</string>
       <key>name</key>
-      <string>variable.language.supercollider</string>
+      <string>glvariable.language.supercollider</string>
     </dict>
+
     <dict>
       <key>match</key>
       <string>\/\/.*</string>
       <key>name</key>
       <string>comment.single.supercollider</string>
     </dict>
-    <dict>
+
+    <dict> #multilinecomment
       <key>begin</key>
       <string>\/\*</string>
       <key>end</key>
@@ -125,17 +135,16 @@
       <string>comment.multiline.supercollider</string>
     </dict>
 
-    
-    <dict>
+    <dict> #comment
       <key>comment</key>
-      <string>source: ruby bundle</string>
+      <string>Numbers</string>
       <key>match</key>
       <string>\b(0[xX]\h(?&gt;_?\h)*|\d(?&gt;_?\d)*(\.(?![^[:space:][:digit:]])(?&gt;_?\d)*)?([eE][-+]?\d(?&gt;_?\d)*)?|0[bB][01]+)\b</string>
       <key>name</key>
       <string>constant.numeric.supercollider</string>
     </dict>
 
-    <dict>
+    <dict> #classname
       <key>match</key>
       <string>(?x)
           \b(
@@ -148,7 +157,6 @@
       <key>name</key>
       <string>storage.type.class.groovy</string>
     </dict>
-
 
   </array>
   <key>scopeName</key>

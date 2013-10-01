@@ -8,26 +8,30 @@
         "mnemonic": "u",
         "children":
         [
-            { "command": "sc_send", "caption": "Evaluate current line", "mnemonic": "e" },
-            { "command": "sc_stop_all_sounds", "caption": "Stop all sounds", "mnemonic": "s" },
+            { "command": "sc_send", "caption": "Evaluate Selection", "mnemonic": "e" },
+            { "command": "sc_stop_all_sounds", "caption": "Stop Sound", "mnemonic": "s" },
             
-            { "command": "sc_search_help", "caption": "Open documentation", "mnemonic": "h" },
-            { "command": "sc_open_class", "caption": "Open class", "mnemonic": "c" },
+            { "caption": "-" },
 
-            { "command": "sc_boot_server", "caption": "Boot Server", "mnemonic": "r" },
-            { "command": "sc_recompile", "caption": "Recompile class library", "mnemonic": "r" },
+            { "command": "sc_search_help", "caption": "Open Documentation", "mnemonic": "h" },
+            { "command": "sc_open_class", "caption": "Open Class", "mnemonic": "c" },
+
+            { "caption": "-" },
+
             { "command": "sc_server_gui", "caption": "Show Server GUI", "mnemonic": "g" },
+            { "command": "sc_boot_server", "caption": "Boot Server", "mnemonic": "b" },
             
             { "caption": "-" },
 
-            { "command": "sc_show_console", "caption": "Show console", "mnemonic": "c" },
-            { "command": "sc_hide_console", "caption": "Hide console", "mnemonic": "i" },
-            { "command": "sc_clear_console", "caption": "Clear console log", "mnemonic": "l" },
+            { "command": "sc_show_console", "caption": "Show Console", "mnemonic": "c" },
+            { "command": "sc_hide_console", "caption": "Hide Console", "mnemonic": "i" },
+            { "command": "sc_clear_console", "caption": "Clear Console Log", "mnemonic": "l" },
             
             { "caption": "-" },
 
-            { "command": "sc_start", "caption": "Start sclang", "mnemonic": "a" },
-            { "command": "sc_stop", "caption": "Stop sclang", "mnemonic": "o" }
+            { "command": "sc_start", "caption": "Start SC-lang", "mnemonic": "a" },
+            { "command": "sc_stop", "caption": "Stop SC-lang", "mnemonic": "o" },
+            { "command": "sc_recompile", "caption": "Recompile Class Library", "mnemonic": "r" }
         ]
     }
   ]

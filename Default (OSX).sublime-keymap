@@ -24,6 +24,9 @@
     "keys": ["command+Shift+b"], "command": "sc_boot_server"
   },
   {
+    "keys": ["command+Shift+g"], "command": "sc_server_gui"
+  },
+  {
     "keys": ["command+k"], "command": "sc_recompile"
   },
   {
