@@ -24,11 +24,17 @@ class Sc_startCommand(sublime_plugin.WindowCommand):
 	panel_name = None
 
 	def run(self):
-		# create output panel
+		# create post window
 		if Sc_startCommand.output_view is None:
-			Sc_startCommand.panel_name = "supercollider"
-			Sc_startCommand.output_view = self.window.get_output_panel(Sc_startCommand.panel_name)
+			Sc_startCommand.panel_name = "post window"
 
+	# 	THIS IS THE SUBLIME CONSOLE
+	#		Sc_startCommand.output_view = self.window.get_output_panel(Sc_startCommand.panel_name)
+	# 	BUT THE FOLLOWING THREE LINES ARE THE SUPERCOLLIDER POST WINDOW   
+	        Sc_startCommand.output_view = self.window.new_file()
+	        Sc_startCommand.output_view.set_scratch(True)
+	        Sc_startCommand.output_view.set_name(Sc_startCommand.panel_name)
+	        
 		# start supercollider
 		if Sc_startCommand.sclang_thread is None or not Sc_startCommand.sclang_thread.isAlive():
 			settings = sublime.load_settings("SuperCollider.sublime-settings")
@@ -83,9 +89,9 @@ class Sc_startCommand(sublime_plugin.WindowCommand):
 			Sc_startCommand.output_view.end_edit(edit)
 
 			if somethingHappened :
-				sublime.set_timeout(self.scrolldown, 100)
+				sublime.set_timeout(self.scrolldown, 50)
 
-			sublime.set_timeout(self.poll, 500)
+			sublime.set_timeout(self.poll, 250)
 
 	def scrolldown(self):
 		if Sc_startCommand.output_view is not None:

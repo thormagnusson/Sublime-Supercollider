@@ -3,21 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>SynthDef(\psynth, {arg freq=${1:440}, amp=${2:0.2}, pan=${3:0}, out=${4:0}, gate=1;
-	var signal, env;
-	signal = Saw.ar(freq, amp);
-	env = EnvGen.ar(Env.adsr(${5:0.01}, ${6:0.2}, ${7:0.6}, ${8:0.5}), gate, doneAction:2);
-	Out.ar(out, Pan2.ar(signal*env, pan));
-}).add;
-a = Synth(\demo, [\freq, ${9:666}]);
-a.free;
+	<string>Pbind(
+	\instrument, \psynth,
+	\freq, Pseq([60, 66, 63, 69].midicps, inf), 
+	\dur, Pseq(4/[1, 4, 4, 2]*0.25, inf),
+	\sustain, Pseq(4/[2, 1, 4, 2]*0.25, inf),
+	\amp, Pseq([0.2, 0.5, 0.4, 0.2], inf)
+).play;
 </string>
 	<key>name</key>
-	<string>synthdef</string>
+	<string>pbind</string>
 	<key>scope</key>
 	<string>source.supercollider</string>
 	<key>tabTrigger</key>
-	<string>synthdef</string>
+	<string>pbind</string>
 	<key>uuid</key>
 	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
 </dict>
