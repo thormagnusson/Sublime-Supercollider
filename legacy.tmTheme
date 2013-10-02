@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Thor Magnusson</string>
+	<string>Thor</string>
 	<key>name</key>
-	<string>SC theme</string>
+	<string>Thor</string>
 	<key>semanticClass</key>
-	<string>theme.dark.supercollider</string>
+	<string>theme.dark.thor</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#CED2DB</string>
+				<string>#FFFFFF</string>
 				<key>caret</key>
-				<string>#FFFF66</string>
+				<string>#000000</string>
 				<key>foreground</key>
-				<string>#2C2E33</string>
+				<string>#000000</string>
 				<key>invisibles</key>
 				<string>#A8A8A8</string>
 				<key>lineHighlight</key>
-				<string>#8996B3</string>
+				<string>#80909E</string>
 				<key>selection</key>
 				<string>#A0A0C0</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Comment</string>
@@ -37,31 +39,48 @@
 				<key>fontStyle</key>
 				<string>italic</string>
 				<key>foreground</key>
-				<string>#F58556</string>
+				<string>#FF0000</string>
 			</dict>
 		</dict>
+
+
 		<dict>
 			<key>name</key>
-			<string>Directive</string>
+			<string>Symbol</string>
 			<key>scope</key>
-			<string>keyword.other.directive</string>
+			<string>entity.name.symbol.supercollider</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
+				<key>foreground</key>
+				<string>#4E9458</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
-			<string>Line-number directives</string>
+			<string>Global Variable</string>
 			<key>scope</key>
-			<string>keyword.other.directive.line-number</string>
+			<string>glvariable.language.supercollider</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
+				<key>foreground</key>
+				<string>#000000</string>
 			</dict>
 		</dict>
+
+		<dict>
+			<key>name</key>
+			<string>Argument</string>
+			<key>scope</key>
+			<string>keyword.arg.supercollider</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4F73C9</string>
+			</dict>
+		</dict>
+
+
 		<dict>
 			<key>name</key>
 			<string>Characters</string>
@@ -70,20 +89,22 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6F8DED</string>
+				<string>#FF8080</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string.double</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#F58556</string>
+				<string>#8C8C8C</string>
 			</dict>
 		</dict>
+		
 		<dict>
 			<key>name</key>
 			<string>Number</string>
@@ -92,115 +113,50 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6F8DED</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
+
+
+
 		<dict>
 			<key>name</key>
-			<string>Floating-point numbers</string>
-			<key>scope</key>
-			<string>constant.numeric.floating-point</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Built-in constant</string>
-			<key>scope</key>
-			<string>constant.language</string>
-			<key>settings</key>
-			<dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>User-defined constant</string>
-			<key>scope</key>
-			<string>constant.character, constant.other</string>
-			<key>settings</key>
-			<dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Variable</string>
-			<key>scope</key>
-			<string>variable.parameter, variable.other</string>
-			<key>settings</key>
-			<dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Language Keyword</string>
+			<string>Language Keywords</string>
 			<key>scope</key>
 			<string>keyword</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B53A86</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
+
+
 		<dict>
 			<key>name</key>
-			<string>Module Keyword</string>
+			<string>Variable Keyword</string>
 			<key>scope</key>
-			<string>entity.name.module,  support.other.module</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>bold</string>
-				<key>foreground</key>
-				<string>#FF8000</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Operators</string>
-			<key>scope</key>
-			<string>keyword.operator</string>
+			<string>keyword.var</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FFFFA0</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
+
+
 		<dict>
 			<key>name</key>
-			<string>Floating-point infix operators</string>
-			<key>scope</key>
-			<string>source.ocaml keyword.operator.symbol.infix.floating-point</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Floating-point prefix operators</string>
-			<key>scope</key>
-			<string>source.ocaml keyword.operator.symbol.prefix.floating-point</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>underline</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Class Names</string>
+			<string>Storage Types</string>
 			<key>scope</key>
 			<string>storage.type</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#376287</string>
+				<string>#48579C</string>
 			</dict>
 		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Variant Types</string>
@@ -209,9 +165,22 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#4080A0</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
+
+	<dict>
+			<key>name</key>
+			<string>Pipe Function</string>
+			<key>scope</key>
+			<string>arg.function</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#4F73C9</string>
+			</dict>
+		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Storage</string>
@@ -221,26 +190,7 @@
 			<dict>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Type name</string>
-			<key>scope</key>
-			<string>entity.name.type</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#93bfea</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Inherited class</string>
-			<key>scope</key>
-			<string>entity.other.inherited-class</string>
-			<key>settings</key>
-			<dict>
-			</dict>
-		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Function name</string>
@@ -251,20 +201,10 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#398243</string>
+				<string>#000000</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Type name</string>
-			<key>scope</key>
-			<string>storage.type.user-defined</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#CC7504</string>
-			</dict>
-		</dict>
+
 		<dict>
 			<key>name</key>
 			<string>Class type name</string>
@@ -273,11 +213,12 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#616ACF</string>
+				<string>#3255A6</string>
 				<key>fontStyle</key>
 				<string></string>
 			</dict>
 		</dict>
+		
 		<dict>
 			<key>name</key>
 			<string>Function argument</string>
@@ -325,35 +266,8 @@
 			<dict>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library classtype</string>
-			<key>scope</key>
-			<string>support.type, support.class</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#9999c3</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Library variable</string>
-			<key>scope</key>
-			<string>support.variable</string>
-			<key>settings</key>
-			<dict>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Invalid</string>
-			<key>scope</key>
-			<string>invalid</string>
-			<key>settings</key>
-			<dict>
-			</dict>
-		</dict>
+
+
 	</array>
 	<key>uuid</key>
 	<string>8D4988B9-ADD8-436F-B388-BC1360F8504B</string>

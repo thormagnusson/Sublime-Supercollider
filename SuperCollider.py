@@ -90,14 +90,13 @@ class Sc_startCommand(sublime_plugin.WindowCommand):
 
 			if somethingHappened :
 				sublime.set_timeout(self.scrolldown, 50)
-
+				
 			sublime.set_timeout(self.poll, 250)
 
 	def scrolldown(self):
 		if Sc_startCommand.output_view is not None:
 			Sc_startCommand.output_view.show(Sc_startCommand.output_view.size()) # scroll down
 			self.window.run_command("show_panel", {"panel": "output." + Sc_startCommand.panel_name})
-
 
 # command to stop SuperCollider interpreter sclang
 class Sc_stopCommand(sublime_plugin.WindowCommand):
@@ -188,10 +187,10 @@ class Sc_search_helpCommand(sublime_plugin.WindowCommand):
 			sel = view.sel()
 			point = sel[0]
 			word = view.word(point)
-			print word
 			Sc_startCommand.sclang_process.stdin.write(bytes("HelpBrowser.openHelpFor(\"" + view.substr(word) + "\");\x0c"))
 			Sc_startCommand.sclang_process.stdin.flush()
 
+# Open a class file in Sublime (ask SC to find the file - because of user extensions)
 class Sc_open_classCommand(sublime_plugin.WindowCommand):
 	def run(self):
 		if Sc_startCommand.sclang_thread is not None and Sc_startCommand.sclang_thread.isAlive():
@@ -199,8 +198,6 @@ class Sc_open_classCommand(sublime_plugin.WindowCommand):
 			sel = view.sel()
 			point = sel[0]
 			word = view.word(point)
-			print word
-
 			#sublime.active_window().open_file("/Users/thor/Desktop/test.xtm") # need to get SC to return path to ST
 			Sc_startCommand.sclang_process.stdin.write(bytes( "(\"open -a 'Sublime Text 2.app'\" + " + view.substr(word) + ".filenameSymbol.asString.escapeChar($ )).unixCmd;\x0c" ))
 			Sc_startCommand.sclang_process.stdin.flush()
