@@ -1,5 +1,4 @@
-
-# Supercollider package for Sublime Text 2
+# SuperCollider package for Sublime Text
 
 This Sublime Text package is based on Geoffroy Montel's package (https://github.com/geoffroymontel/supercollider-package-for-sublime-text) and using lots of the goodies Arthur Carabot put into his fork (https://github.com/acarabott/supercollider-tmbundle). 
 
