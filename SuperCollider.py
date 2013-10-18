@@ -201,4 +201,3 @@ class Sc_open_classCommand(sublime_plugin.WindowCommand):
 			#sublime.active_window().open_file("/Users/thor/Desktop/test.xtm") # need to get SC to return path to ST
 			Sc_startCommand.sclang_process.stdin.write(bytes( "(\"open -a 'Sublime Text 2.app'\" + " + view.substr(word) + ".filenameSymbol.asString.escapeChar($ )).unixCmd;\x0c" ))
 			Sc_startCommand.sclang_process.stdin.flush()
-

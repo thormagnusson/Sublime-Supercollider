@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>var notes, keyboard;
+notes = Array.fill(127, { nil });
+SynthDef(\moog, { arg out=0, freq = 440, amp = 0.3, pan = 0, cutoff = 2, gain = 2, gate=1;
+	var signal, filter, env;
+	signal = Saw.ar(freq, amp);
+	env = EnvGen.ar(Env.adsr(0.01, 0.3, 0.6, 1), gate: gate, doneAction:2);
+	filter = MoogFF.ar(signal * env, freq * cutoff, gain );	
+	Out.ar(out, Pan2.ar(filter, pan));
+}).add;
+MIDIIn.connectAll;
+MIDIdef.noteOn(\myOndef, {arg vel, key, channel, device; 
+	// we use the key as index into the array as well
+	notes[key] = Synth(\moog, [\freq, key.midicps, \amp, vel/127, \cutoff, 4]);
+});
+MIDIdef.noteOff(\myOffdef, {arg vel, key, channel, device; 
+	notes[key].release;
+});
+</string>
+	<key>name</key>
+	<string>MIDIkeyboard</string>
+	<key>scope</key>
+	<string>source.supercollider</string>
+	<key>tabTrigger</key>
+	<string>MIDIkeyboard</string>
+	<key>uuid</key>
+	<string>C0F1C9B0-6393-4B2B-86B4-40010363DCDE</string>
+</dict>
+</plist>

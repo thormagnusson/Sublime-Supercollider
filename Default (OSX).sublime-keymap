@@ -1,4 +1,7 @@
 [
+  { 
+    "keys": ["command+shift+a"], "command": "expand_selection", "args": {"to": "brackets"}
+  },
   {
     "keys": ["shift+enter"], "command": "sc_send"
   },
